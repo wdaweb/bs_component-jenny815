@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>component</title>
+  <!-- 1. link bootstrap.css -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <style>
+    body {
+      background: #eee;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .container {
+      margin-bottom: 2rem;
+    }
+
+    .box {
+      width: 75%;
+    }
+
+    .carousel img {
+      object-fit: cover;
+    }
+
+    .media img {
+      width: 50%;
+      height: 100vh;
+    }
+
+    @media (max-width:575px) {
+
+      .carousel {
+        height: auto !important;
+      }
+
+      .carousel img {
+        height: auto !important;
+      }
+
+      .media {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .media img {
+        width: 100%;
+        height: auto;
+      }
+
+      .a {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+      .text1 {
+        font-size: 10pt;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid px-0 ">
+    <div id="a1" class="carousel vh-100 bg-dark" data-ride="carousel" data-interval="5000">
+      <ol class="carousel-indicators">
+        <li data-target="#a1" data-slide-to="0" class="active">1</li>
+        <li data-target="#a1" data-slide-to="1">2</li>
+        <li data-target="#a1" data-slide-to="2">3</li>
+      </ol>
+      <div class="carousel-inner h-100">
+        <div class="carousel-item h-100 active">
+          <img src="https://picsum.photos/1920/1080/?random=1" class="d-block w-100 h-100">
+          <div class="carousel-caption d-md-block">
+          </div>
+        </div>
+        <div class="carousel-item h-100">
+          <img src="https://picsum.photos/1920/1080/?random=2" class="d-block w-100 h-100">
+          <div class="carousel-caption d-md-block">
+          </div>
+        </div>
+        <div class="carousel-item h-100">
+          <img src="https://picsum.photos/1920/1080/?random=3" class="d-block w-100 h-100">
+          <div class="carousel-caption d-md-block">
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#a1" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#a1" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="box d-flex justify-content-center align-items-center w-100 pt-5 pb-5">
+    <div class="container-fluid">
+      <div class="card-deck">
+        <div class="card">
+          <img src="https://picsum.photos/400/300/?random=1">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content.
+              This content is a little bit longer.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/400/300/?random=2">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/400/300/?random=3">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content.
+              This card has even longer content than the first to show that equal height action.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="media h-100">
+    <img src="https://picsum.photos/1920/1080/?random=4">
+    <div class="media-body h-100 ">
+      <div class="card h-100 ">
+        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo expedita laborum, est
+            veniam autem iure dignissimos, culpa quod vitae a ea facere possimus ex atque in mollitia. Assumenda,
+            consequatur distinctio tempora quibusdam pariatur ullam, neque earum, itaque perspiciatis fugiat nobis
+            atque rem officiis? Quis id, eveniet consectetur architecto velit dolorem!</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="media h-100 a">
+    <div class="media-body h-100 ">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo expedita laborum, est
+            veniam autem iure dignissimos, culpa quod vitae a ea facere possimus ex atque in mollitia. Assumenda,
+            consequatur distinctio tempora quibusdam pariatur ullam, neque earum, itaque perspiciatis fugiat nobis
+            atque rem officiis? Quis id, eveniet consectetur architecto velit dolorem!</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <img src="https://picsum.photos/1920/1080/?random=6">
+  </div>
+
+
+
+  <div class="box1 bg-dark p-5 ">
+    <div class="container">
+      <div class="row w-100">
+        <div class="col-6 col-sm-3 d-flex align-items-center justify-content-center">
+          <img src="https://picsum.photos/100/100/?random=8" class="rounded-circle">
+        </div>
+        <div class="col-6 col-sm-3  d-flex flex-column justify-content-cente text-left text-white ">
+          <h5>Address</h5>
+          <p>1234 streat name<br>
+            city, aa 9999
+          </p>
+        </div>
+        <div class="col-6 col-sm-3 d-flex flex-column justify-content-cente text-left text-white g">
+          <h5>Links</h5>
+          <p>wrbsite builder<br>
+            download for windows<br>
+            download for mac
+          </p>
+        </div>
+        <div class="col-6 col-sm-3 d-flex flex-column justify-content-cente text-left text-white">
+          <h5>Contacts</h5>
+          <p>email:00000000000<br>
+            phone:000000000<br>
+            fax:000000000000
+          </p>
+        </div>
+      </div>
+      <div class="row pt-5">
+        <div class="col text-white d-flex justify-content-center align-items-center">
+          <p class="text1">&copy; copyright 2019 free footer template - all rights reserved</p>
+        </div>
+      </div>
+    </div>
+  </div>s
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
